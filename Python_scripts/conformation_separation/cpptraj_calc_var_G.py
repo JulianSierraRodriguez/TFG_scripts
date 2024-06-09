@@ -30,13 +30,6 @@ calc_a95 = ' dihedral :192@CA :172@CA :147@CA :107@CA range360 out '
 
 #####
 
-#for i in range(2):
-#	inp_file = 'cpptraj_'
-#	out_file = 'bak_'
-#	if i == 0:
-#		inp_file = inp_file + 'd91_'
-#		out_file = out_file + 'd91_'
-#		calc = calc_d91
 for j in range(8):
 	inp_file = 'cpptraj_'
 	out_file = 'bak_'
@@ -131,4 +124,3 @@ for j in range(8):
 	run_cpptraj = 'sbatch ' + inp_files
 	os.system(run_cpptraj)
 	print(inp_file)
-
