@@ -47,9 +47,6 @@ def update(frame):
 	scat.set_color(cmap(norm(data3_cut[:frame])))
 	return(scat)
 
-#min_tcut = min(time_cut)
-#max_tcut = max(time_cut)
-
 min_dcut = min(data3_cut)
 max_dcut = max(data3_cut)
 
@@ -63,5 +60,3 @@ writer = animation.PillowWriter(fps=15, metadata=dict(artist='Me'), bitrate=1800
 ani.save('dist_vs_dist_vs_dist_B3a.gif', writer=writer)
 
 plt.show()
-
-
